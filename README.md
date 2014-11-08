@@ -1,0 +1,2 @@
+# Reverse Youtube Watch Later List
+This `userscript` simply reverses the YouTube's Watch Later list order. The userscript is compatiable with `Google Chrome` and [Tampermonkey](http://tampermonkey.net/).
