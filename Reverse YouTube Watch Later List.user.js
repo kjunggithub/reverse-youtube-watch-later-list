@@ -8,16 +8,13 @@
 // @match      http://www.youtube.com/playlist?list=WL
 // @copyright  2014+, Kevin Jung
 // @require https://code.jquery.com/jquery-latest.min.js
-// @require https://gist.github.com/raw/2625891/waitForKeyElements.js
 // @run-at document-start
 // ==/UserScript==
 
 $('html, body').css('display', 'none');
 
-function reverseYouTubeWatchLaterList () {
-	$('html, body').css('display', 'none');
-
-	// Set variables.
+addEventListener('DOMContentLoaded', function() {
+		// Set variables.
 	var wishListRows = [],
 		reversedList = '';
 
@@ -45,6 +42,4 @@ function reverseYouTubeWatchLaterList () {
 	$('#pl-load-more-destination').append(reversedList);
 
 	$('html, body').css('display', 'block');
-}
-
-waitForKeyElements("#pl-video-table", reverseYouTubeWatchLaterList);
+}, false);
