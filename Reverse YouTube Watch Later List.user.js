@@ -2,7 +2,7 @@
 // @id ReverseYouTubeWatchLaterlist
 // @name       Reverse YouTube Watch Later List
 // @namespace  http://kjung.ca
-// @version    0.1
+// @version    0.2
 // @description  Reverses the list order for the Youtube Watch Later page
 // @match      https://www.youtube.com/*
 // @match      http://www.youtube.com/*
@@ -15,6 +15,7 @@ waitForKeyElements ("#pl-video-table", reverseYouTubeWatchLaterlist);
 
 function reverseYouTubeWatchLaterlist (jNode) {
 	$('html, body').css('display', 'none');
+
 	// Set variables.
 	var wishListRows = [],
 		reversedList = '';
