@@ -4,17 +4,18 @@
 // @namespace  http://kjung.ca
 // @version    0.1
 // @description  Reverses the list order for the Youtube Watch Later page
-// @match      https://www.youtube.com/playlist?list=WL
-// @match      http://www.youtube.com/playlist?list=WL
+// @match      https://www.youtube.com/*
+// @match      http://www.youtube.com/*
 // @copyright  2014+, Kevin Jung
 // @require https://code.jquery.com/jquery-latest.min.js
-// @run-at document-start
+// @require https://gist.github.com/raw/2625891/waitForKeyElements.js
 // ==/UserScript==
 
-$('html, body').css('display', 'none');
+waitForKeyElements ("#pl-video-table", reverseYouTubeWatchLaterlist);
 
-addEventListener('DOMContentLoaded', function() {
-		// Set variables.
+function reverseYouTubeWatchLaterlist (jNode) {
+	$('html, body').css('display', 'none');
+	// Set variables.
 	var wishListRows = [],
 		reversedList = '';
 
@@ -42,4 +43,4 @@ addEventListener('DOMContentLoaded', function() {
 	$('#pl-load-more-destination').append(reversedList);
 
 	$('html, body').css('display', 'block');
-}, false);
+}
