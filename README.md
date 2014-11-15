@@ -1,4 +1,4 @@
-# Reverse Youtube Watch Later List
+# Reverse Youtube Watch Later List Userscript
 ## Introduction
 **Reverse Youtube Watch Later List** is a simple  `userscript` that reverses the YouTube's Watch Later list order.
 
