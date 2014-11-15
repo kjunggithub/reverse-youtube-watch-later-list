@@ -8,7 +8,7 @@
 // @match      http://www.youtube.com/*
 // @copyright  2014+, Kevin Jung
 // @require https://code.jquery.com/jquery-latest.min.js
-// @require https://gist.github.com/raw/2625891/waitForKeyElements.js
+// @require https://greasyfork.org/scripts/1003-wait-for-key-elements/code/Wait%20for%20key%20elements.js?version=2765
 // ==/UserScript==
 
 waitForKeyElements ("#pl-video-table", reverseYouTubeWatchLaterlist);
