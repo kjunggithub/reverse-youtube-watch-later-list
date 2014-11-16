@@ -13,7 +13,7 @@
 
 waitForKeyElements ("#pl-video-table", reverseYouTubeWatchLaterlist);
 
-function reverseYouTubeWatchLaterlist (jNode) {
+function reverseYouTubeWatchLaterlist () {
 	$('html, body').css('display', 'none');
 
 	// Set variables.
@@ -34,7 +34,7 @@ function reverseYouTubeWatchLaterlist (jNode) {
 	wishListRows = wishListRows.reverse();
 
 	// Loop through each video.
-	$.each(wishListRows, function(index, video){
+	$.each(wishListRows, function(index, video) {
 
 		// Append the HTML contents of the video into a string.
 		reversedList += video.outerHTML;
